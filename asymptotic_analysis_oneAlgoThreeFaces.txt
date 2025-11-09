@@ -1,0 +1,20 @@
+### Asymptotic Analysis for Functions in oneAlgoThreeFaces.py
+
+Based on the code in `oneAlgoThreeFaces.py`, here is the basic asymptotic time complexity analysis for each function, assuming `n` is the input size and focusing on the dominant operations (arithmetic and loops). This analysis considers the number of operations as `n` grows large.
+
+#### fun1(n)
+- **Code**: `return n*(n+1)/2`
+- **Operations**: A few arithmetic operations (multiplication, addition, division).
+- **Time Complexity**: O(1) – Constant time, as the number of operations does not depend on `n`.
+
+#### fun2(n)
+- **Code**: A loop that iterates `n` times, performing addition in each iteration.
+- **Operations**: The loop runs `n` times, each with constant-time operations.
+- **Time Complexity**: O(n) – Linear time, proportional to `n`.
+
+#### fun3(n)
+- **Code**: Nested loops where the outer loop runs `n` times, and the inner loop runs up to `i` times (where `i` is the outer loop variable).
+- **Operations**: Total iterations = sum from i=1 to n of i = n(n+1)/2, which is quadratic.
+- **Time Complexity**: O(n²) – Quadratic time, as the operations grow with the square of `n`.
+
+The print statements at the end compute the functions for `n=4` but do not affect the asymptotic analysis, as they are for demonstration purposes.
